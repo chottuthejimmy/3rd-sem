@@ -15,7 +15,7 @@ long phone=0;
 // usn=reg;
 // name=nm;
 // branch=br;
-// phone=ph;
+// phone=ph; 
 // }
 void displayStudent()
 {
@@ -34,11 +34,12 @@ try (Scanner ip = new Scanner(System.in)) {
 	System.out.println("Enter the number of students");
 	int n=ip.nextInt();
 	// ip.nextLine();
-	for(int i=0;i<n;i++)
-	st[i]=new Program_2();
+	// for(int i=0;i<n;i++)
+	// st[i]=new Program_2();
 	// ip.useDelimiter("\r?\n");
 	for(int j=0;j<n;j++)
 	{
+	st[j]=new Program_2();
 	System.out.format("Enter the Usn, Name, Branch, Phone Number of student %d :\n",j+1);
 	ip.nextLine();
 	st[j].usn=ip.nextLine();

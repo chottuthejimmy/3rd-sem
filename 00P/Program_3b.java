@@ -32,7 +32,6 @@ public class Program_3b {
 				System.out.println("Invalid Operator");
 				return;
 		}
-
 		System.out.println(first+" "+op+" "+second+" = "+result);
 	}
 
