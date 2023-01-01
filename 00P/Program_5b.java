@@ -1,4 +1,4 @@
-
+/* Write a java program demonstrating constructor overloading */
 
 public class Program_5b {
 

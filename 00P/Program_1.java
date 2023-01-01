@@ -1,5 +1,6 @@
+//Write a java program that prints all real solutions to the quadratic equation ax2+bx+c=0. 
+//Read in a, b, c and use the quadratic formula.
 import java.util.Scanner;
-
 public class Program_1 {
 	public static void main(String[] args) {
 		int a, b, c;	// coefficients
