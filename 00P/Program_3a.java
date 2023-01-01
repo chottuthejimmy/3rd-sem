@@ -1,3 +1,4 @@
+/* Write a program to check prime number */
 import java.util.Scanner;
 public class Program_3a {
 

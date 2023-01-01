@@ -1,4 +1,4 @@
-// package tarun_ai;
+/* Write a program for Arithmetic calculator using switch case menu */
 import java.util.*;
 public class Program_3b {
 
