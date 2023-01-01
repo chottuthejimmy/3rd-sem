@@ -10,13 +10,13 @@ public class Program_2
 {
 String usn,name,branch;
 long phone=0;
-void insertStudent(String reg,String nm, String br,long ph)
-{
-usn=reg;
-name=nm;
-branch=br;
-phone=ph;
-}
+// void insertStudent(String reg,String nm, String br,long ph)
+// {
+// usn=reg;
+// name=nm;
+// branch=br;
+// phone=ph;
+// }
 void displayStudent()
 {
 System.out.println("\t************************");
@@ -41,17 +41,17 @@ try (Scanner ip = new Scanner(System.in)) {
 	{
 	System.out.format("Enter the Usn, Name, Branch, Phone Number of student %d :\n",j+1);
 	ip.nextLine();
-	String usn=ip.nextLine();
+	st[j].usn=ip.nextLine();
 	// usn+=ip.nextLine();
-	String name=ip.nextLine();
+	st[j].name=ip.nextLine();
 	// name+=ip.nextLine();
-	String branch=ip.nextLine();
+	st[j].branch=ip.nextLine();
 	// branch+=ip.nextLine();
 	// ip.nextLine();
-	long phone=0;
-	phone = ip.nextLong();
+	// long phone=0;
+	st[j].phone = ip.nextLong();
 	// ip.close();
-	st[j].insertStudent(usn,name,branch,phone);
+	// st[j].insertStudent(usn,name,branch,phone);
 	}
 	System.out.println("\t************************");
 	for( int m=0;m<n;m++)
@@ -59,6 +59,7 @@ try (Scanner ip = new Scanner(System.in)) {
 	System.out.format("\t Student %d details are\n",m+1);
 	st[m].displayStudent();
 	}
+	
 }
 }
 }
