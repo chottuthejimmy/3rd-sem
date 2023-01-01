@@ -15,8 +15,8 @@ class Staff {
         System.out.print("Enter Staff Id: ");
         staffId = id.next();
         System.out.print("Enter Name: ");
+        name = id.next();
         name = id.nextLine();
-        name += id.nextLine();
         System.out.print("Enter Phone: ");
         phone = id.nextLong();
         System.out.print("Enter Salary: ");
