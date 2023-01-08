@@ -52,8 +52,6 @@ a=stack[top];
 stack[top]='\0';
 top--;
 b=stack[top];
-stack[top]='\0';
-top--;
 switch(c)
 {
 case '+': ans=b+a;
@@ -68,6 +66,5 @@ case '^': ans=pow(b,a);
           break;
 default: ans=0;
 }
-top++;
 stack[top]=ans;
 }

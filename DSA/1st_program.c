@@ -6,7 +6,7 @@ Support the program with functions for each of the above operations.*/
 #include<stdio.h> 
 #include<stdlib.h>
 int a[50];
-int n,val,i,pos;
+int n,i;
 /*Function Prototype*/
 void create();
 void display();
