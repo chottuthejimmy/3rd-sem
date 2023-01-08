@@ -1,3 +1,8 @@
+/*Design, Develop and Implement a menu driven Program in C for the following Array Operations
+a. Creating an Array of N Integer Elements
+b. Display of Array Elements with Suitable Headings
+c. Exit.
+Support the program with functions for each of the above operations.*/
 #include<stdio.h>
 #include<stdlib.h>
 int a[50];
