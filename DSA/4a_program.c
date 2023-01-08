@@ -5,6 +5,7 @@
 #include<string.h>
 #include<stdlib.h>
 #include<math.h>
+#include<ctype.h>
 #define MAX 50
 int stack[MAX];
 char post[MAX];
@@ -20,7 +21,10 @@ printf("Insert a postfix notation : ");
 // scanf("%s",post);
 for(i=0;i<strlen(post);i++)
 {
-if(post[i]>='0' && post[i]<='9')
+   if (isspace(post[i])) {
+        continue;  // skip over whitespace characters
+    }
+if(isdigit(post[i]))
 {
 pushstack(i);
 }
@@ -31,7 +35,7 @@ calculator(post[i]);
 else
 {
 printf("Invalid input!");
-return 0;
+exit(0);
 }
 }
 printf("Result =  %d",stack[top]);
