@@ -2,7 +2,8 @@
   a.Inserting an ELement (ELEM) at a given valid Position (POS)
   b. Deleting an Element at given valid Position (POS)
   c. Display of Array Elements
-  d. Exit*/
+  d. Exit
+  Support the program with functions for each of the above operations.*/
 
 #include<stdio.h>
 #include<stdlib.h>
