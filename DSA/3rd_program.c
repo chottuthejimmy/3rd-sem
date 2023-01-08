@@ -44,7 +44,7 @@ return 0;
 }
 int push(int sz) //Inserting element into the stack
 {
-int item,n;
+int item;
 if(top==(sz-1))
 {
 printf("--Stack Overflow!--\n");

@@ -14,11 +14,11 @@ Program_5b(int id, String name)
 System.out.println("This is Parameterized Constructor:");
 this.id = id;
 this.name = name;
-System.out.println("Student Id : "+id + "\nStudent Name : "+name);
+System.out.println("Student Id : "+ id + "\nStudent Name : "+name);
 }
 public static void main(String[] args)
 {
 new Program_5b();
-new Program_5b(10, "David");
+new Program_5b(10,"David");
 }
 }

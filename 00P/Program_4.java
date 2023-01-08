@@ -1,3 +1,4 @@
+
 /*Design a super class called Staff with details as StaffId, Name, Phone, Salary. 
 Extend this class by writing three subclasses namely Teaching (domain, publications), 
 Technical (skills), and Contract (period). 
@@ -5,11 +6,11 @@ Write a Java program to read and display at least 3 staff objects of all three c
 import java.util.Scanner;
 
 class Staff {
-    Scanner id = new Scanner(System.in);
     String staffId;
     String name;
     long phone;
     float salary;
+    Scanner id = new Scanner(System.in);
 
     public void accept(Scanner id) {
         System.out.print("Enter Staff Id: ");
@@ -38,7 +39,7 @@ class Teaching extends Staff {
     public void accept(Scanner id) {
         super.accept(id);
         System.out.print("Enter Domain: ");
-        domain = id.nextLine();
+        domain = id.next();
         domain += id.nextLine();
         System.out.print("Enter Number of Publications: ");
         n = id.nextInt();
@@ -86,7 +87,7 @@ class Contract extends Staff {
         System.out.println("Contract Period: " + period);
     }
 }
- 
+
 public class Program_4 {
     public static void main(String[] args) {
         Scanner id = new Scanner(System.in);
