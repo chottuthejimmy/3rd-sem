@@ -24,9 +24,14 @@ if(post[i]>='0' && post[i]<='9')
 {
 pushstack(i);
 }
-if(post[i]=='+' || post[i]=='-' || post[i]=='*' || post[i]=='/' || post[i]=='^')
+else if(post[i]=='+' || post[i]=='-' || post[i]=='*' || post[i]=='/' || post[i]=='^')
 {
 calculator(post[i]);
+}
+else
+{
+printf("Invalid input!");
+return 0;
 }
 }
 printf("Result =  %d",stack[top]);
