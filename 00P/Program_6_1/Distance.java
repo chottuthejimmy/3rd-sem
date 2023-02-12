@@ -25,7 +25,7 @@ public void mitokm()
 {
 	System.out.print("Enter the distance in mile: ");
 	mi = in.nextDouble();
-	km=mi*1.60934;
+	km=mi*1.61;
 	System.out.println(mi+"mile is equal to "+df.format(km)+"km");
 	System.out.println();
 }
@@ -33,7 +33,7 @@ public void kmtmi()
 {
 	System.out.print("Enter the distance in kilometers: ");
 	km = in.nextDouble();
-	mi=km*0.621371;
+	mi=km/1.61;
 	System.out.println(km+"km is equal to "+df.format(mi)+"mile");
 	System.out.println("\n");
 }

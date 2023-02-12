@@ -1,14 +1,12 @@
 
 // Write a Java program that implements a multi thread application that has three threads. First thread
-// generates a random integer for everyone second. Second thread computes the square of the number and
+// generates a random integer for every one second. Second thread computes the square of the number and
 // prints. Third thread will print the value of a cube of the number.
-import java.util.Random;
 
 class random_number implements Runnable {
     public void run() {
-        Random ra = new Random();
         for (int i = 0; i < 10; i++) {
-            int r = ra.nextInt(100);
+            int r = (int) (Math.random() * 100);
             System.out.println("Random number:" + r);
             square s = new square(r);
             s.start();
@@ -22,35 +20,24 @@ class random_number implements Runnable {
         }
     }
 }
-
 class square extends Thread {
-    int x;
-
+    int r;
     public square(int r) {
-        x = r;
+        this.r = r;
     }
-
     public void run() {
-        int sq;
-        sq = x * x;
-        System.out.println("Square of " + x + " = " + sq);
+        System.out.println("Square of " + r + " = " + (int)Math.pow(r, 2));
     }
 }
-
 class cube extends Thread {
-    int x;
-
+    int r;
     public cube(int r) {
-        x = r;
+        this.r = r;
     }
-
     public void run() {
-        int cu;
-        cu = x * x * x;
-        System.out.println("cube of " + x + " = " + cu);
+        System.out.println("cube of " + r + " = " + (int)Math.pow(r, 3));
     }
 }
-
 public class Program_8 {
     public static void main(String[] args) {
         random_number n = new random_number();

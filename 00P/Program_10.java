@@ -20,12 +20,11 @@ public class Program_10
     public static void main(String args[])
     {
         Program_10 obj=new Program_10();
-        try (Scanner in = new Scanner(System.in))
-        {
+        Scanner in = new Scanner(System.in);
             System.out.println("Enter the values of a and b : ");
             int m=in.nextInt();
             int n=in.nextInt();
+            in.close();
             obj.div(m,n);
-        }
     }
 }

@@ -7,14 +7,13 @@ import java.util.*;
 public class Program_9 {
     ArrayList<String> list = new ArrayList<String>(); // Creating arraylist
     Scanner scob1 = new Scanner(System.in);
-
+ 
     public void arraydisplay() {
-        list.add("CSE");// Adding object in arraylist
+        list.add("CSE");// Adding elements in arraylist
         list.add("ISE");
         list.add("ME");
         System.out.println("ArrayList element are");
         System.out.println(list + "\n");// gives the elements of the list
-        // System.out.println("");
     }
 
     public void appendatend() {
@@ -45,21 +44,18 @@ public class Program_9 {
         } else {
             System.out.println("Element found at " + (in + 1) + " position\n");
         }
-
     }
 
-    void print()
-    {
+   public void print() {
         System.out.println("Enter the starting character to print strings");
         String inputc = scob1.next();
         System.out.println("String starting with character " + inputc.toUpperCase() + " are");
         boolean flag = false;
         for (String i : list) {
-            if (i.startsWith(inputc.toUpperCase())){
+            if (i.startsWith(inputc.toUpperCase())) {
                 System.out.println(i);
                 flag = true;
             }
-
         }
         if (!flag)
             System.out.println("None");

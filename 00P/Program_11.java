@@ -15,21 +15,19 @@ class Program_11
             obj.close();
             File f1 = new File(fname);//the information given by the user is fetched here
             System.out.println("File Name: " + f1.getName());
-            System.out.println(f1.exists() ? "File exists" : "File does not exist");
+            if(f1.exists())
+            {
+            System.out.println("File exists");
             System.out.println(f1.canWrite() ? "File is writeable" : "File is not writeable");
             System.out.println(f1.canRead() ? "File is readable" : "File is not readable");
-            String fileName = f1.toString();//we need to fine type of the file so we convert the file object into string
-            int index = fileName.lastIndexOf('.');
-            if(index > 0)
-            {
-            String type = fileName.substring(index + 1);//substring function extracts the remaining part of the string
+            int index = fname.lastIndexOf('.');
+            String type = fname.substring(index + 1);//substring function extracts the remaining part of the string
             System.out.println("File type is " + type);
+            System.out.println("File size: " + f1.length() + " Bytes");
             }
             else
             {
-            System.out.println("File doesn't have type");
-            }
-            System.out.println("File size: " + f1.length() + " Bytes");
-        
+            System.out.println("File doesn't exist");
+            }        
     }
 }    

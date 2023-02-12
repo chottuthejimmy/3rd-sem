@@ -8,14 +8,10 @@ interface resume {
 }
 
 class teacher implements resume {
-    String name;
-    String emailid;
+    String name, emailid, qualification, acheivements, address;
     long phone;
-    String address;
     int age;
-    String qualification;
     float experience;
-    String acheivements;
 
     @Override
     public void biodata() {
@@ -33,14 +29,11 @@ class teacher implements resume {
     }
 }
 
-class student_resume implements resume {
-    String name;
-    String emailid;
+class student implements resume {
+    String name, emailid, address, discipline;
     long phone;
-    String address;
     int age;
-    double result;
-    String discipline;
+    float result;
 
     @Override
     public void biodata() {
@@ -59,12 +52,9 @@ class student_resume implements resume {
 
 public class Program_7 {
     public static void main(String[] args) {
-        // String n,e,ad,q,ach,di;
-        // int p,ag;
-        // float re,exp;
         Scanner sc = new Scanner(System.in);
         teacher t = new teacher();
-        student_resume s = new student_resume();
+        student s = new student();
         System.out.println("Enter the name of the teacher:");
         t.name = sc.next();
         System.out.println("Enter the email id of the teacher:");
@@ -97,8 +87,8 @@ public class Program_7 {
         System.out.println("Enter the age of the student:");
         s.age = sc.nextInt();
         System.out.println("Enter the result of the student:");
-        s.result = sc.nextDouble();
-        System.out.println("Enter the discipline of the student:");
+        s.result = sc.nextFloat();
+        System.out.println("Enter the discipline of the student:"); 
         s.discipline = sc.next();
         s.discipline += sc.nextLine();
         sc.close();
