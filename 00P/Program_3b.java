@@ -21,11 +21,11 @@ public class Program_3b {
 		case'*': result = first * second;
 				break;
 		case'/':
-			if (second ==0)
-			{
-				System.out.println("Invalid Denominator");
-				return;
-			}
+			// if (second ==0)
+			// {
+			// 	System.out.println("Invalid Denominator");
+			// 	return;
+			// }
 			result = first/second;
 			break;
 			default:

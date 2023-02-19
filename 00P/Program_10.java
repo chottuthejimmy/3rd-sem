@@ -4,9 +4,9 @@
 import java.util.*;
 public class Program_10
 {
-    int c;
     void div(int a,int b)
     {
+        int c;
         try
         {
         c=a/b;
@@ -25,6 +25,6 @@ public class Program_10
             int m=in.nextInt();
             int n=in.nextInt();
             in.close();
-            obj.div(m,n);
+            obj.div(m,n);            
     }
 }
