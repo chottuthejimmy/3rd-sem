@@ -7,7 +7,7 @@ int n, amat[size][size], source, visited[size], i, j;
 printf("Enter the no. of cities\n");
 scanf("%d", &n);
 printf("Enter the Coef. Adjacency Matrix\n");
-// for(i=0; i<n; i++)
+for(i=0; i<n; i++)
 for(j=0; j<n; j++)
 scanf("%d", &amat[i][j]);
 printf("Enter Source\n");
