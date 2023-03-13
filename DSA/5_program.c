@@ -9,12 +9,6 @@ typedef struct node
     int data;
     struct Node *link; 
 } Node;
-
-// typedef struct Node
-// {
-// int data;
-// struct Node*link;
-// }Node;
 Node *first=NULL,*head=NULL;
 void create()
 {
