@@ -1,8 +1,10 @@
+
 /* Write a program for Arithmetic calculator using switch case menu */
 import java.util.*;
+
 public class Program_3b {
 
-	public static void main(String[] args) { 
+	public static void main(String[] args) {
 		Scanner ip = new Scanner(System.in);
 		System.out.println("Enter the operator");
 		char op = ip.next().charAt(0);
@@ -12,27 +14,24 @@ public class Program_3b {
 		double second = ip.nextDouble();
 		ip.close();
 		double result = 0;
-		switch(op)
-		{
-		case'+': result = first + second;
+		switch (op) {
+			case '+':
+				result = first + second;
 				break;
-		case'-': result = first - second;
+			case '-':
+				result = first - second;
 				break;
-		case'*': result = first * second;
+			case '*':
+				result = first * second;
 				break;
-		case'/':
-			// if (second ==0)
-			// {
-			// 	System.out.println("Invalid Denominator");
-			// 	return;
-			// }
-			result = first/second;
-			break;
+			case '/':
+				result = first / second;
+				break;
 			default:
 				System.out.println("Invalid Operator");
 				return;
 		}
-		System.out.println(first+" "+op+" "+second+" = "+result);
+		System.out.println(first + " " + op + " " + second + " = " + result);
 	}
 
 }

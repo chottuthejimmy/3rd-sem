@@ -20,24 +20,31 @@ class random_number implements Runnable {
         }
     }
 }
+
 class square extends Thread {
     int r;
+
     public square(int r) {
         this.r = r;
     }
+
     public void run() {
-        System.out.println("Square of " + r + " = " + (int)Math.pow(r, 2));
+        System.out.println("Square of " + r + " = " + (int) Math.pow(r, 2));
     }
 }
+
 class cube extends Thread {
     int r;
+
     public cube(int r) {
         this.r = r;
     }
+
     public void run() {
-        System.out.println("cube of " + r + " = " + (int)Math.pow(r, 3));
+        System.out.println("cube of " + r + " = " + (int) Math.pow(r, 3));
     }
 }
+
 public class Program_8 {
     public static void main(String[] args) {
         random_number n = new random_number();

@@ -2,29 +2,25 @@
 // Raise an exception when b is equal to zero.
 
 import java.util.*;
-public class Program_10
-{
-    void div(int a,int b)
-    {
+
+public class Program_10 {
+    void div(int a, int b) {
         int c;
-        try
-        {
-        c=a/b;
-        System.out.println("Result="+c);
-        }
-        catch(ArithmeticException e)
-        {
-        System.out.println("Cannot divide by zero");
+        try {
+            c = a / b;
+            System.out.println("Result = " + c);
+        } catch (ArithmeticException e) {
+            System.out.println("Cannot divide by zero");
         }
     }
-    public static void main(String args[])
-    {
-        Program_10 obj=new Program_10();
+
+    public static void main(String args[]) {
+        Program_10 obj = new Program_10();
         Scanner in = new Scanner(System.in);
-            System.out.println("Enter the values of a and b : ");
-            int m=in.nextInt();
-            int n=in.nextInt();
-            in.close();
-            obj.div(m,n);            
+        System.out.println("Enter the values of a and b : ");
+        int m = in.nextInt();
+        int n = in.nextInt();
+        in.close();
+        obj.div(m, n);
     }
 }
