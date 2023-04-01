@@ -1,3 +1,6 @@
+/*Design, Develop and Implement a menu driven Program in C for the following operations on Binary Search Tree (BST) of Integers
+a. Create a BST of N Integers
+b. Traverse the BST in Inorder, Preorder and Post Order*/
 #include <stdio.h>
 #include <stdlib.h>
 typedef struct BST {
