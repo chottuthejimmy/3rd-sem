@@ -25,7 +25,7 @@ public static void etr()
 {
 	System.out.print("Enter Euro to convert into Rupees: ");
 	euro=in.nextInt();
-	inr=euro*79.06;
+	inr=euro*89.06;
 	System.out.println("Euro = "+euro+" equal to INR = "+df.format(inr));
 	System.out.println();
 	}
@@ -33,7 +33,7 @@ public static void rte()
 {
 	System.out.print("Enter Rupees to convert into Euro: ");
 	inr=in.nextInt();
-	euro=(inr/79.06);
+	euro=(inr/89.06);
 	System.out.println("Rupee = "+inr+" equal to Euro = "+df.format(euro));
 	System.out.println();
 	}
@@ -41,7 +41,7 @@ public static void ytr()
 {
 	System.out.print("Enter Yen to convert into Rupees: ");
 	yen=in.nextInt();
-	inr=yen*0.57;
+	inr=yen*0.62;
 	System.out.println("Yen = "+yen+" equal to INR = "+df.format(inr));
 	System.out.println();
 	}
@@ -49,7 +49,7 @@ public static void rty()
 {
 	System.out.print("Enter Rupee to convert into Yen: ");
 	inr=in.nextInt();
-	yen=(inr/0.57);
+	yen=(inr/0.62);
 	System.out.println("INR = "+inr +" equal to YEN = "+df.format(yen));
 	System.out.println("\n");
 	}
