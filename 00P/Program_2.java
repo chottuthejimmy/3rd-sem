@@ -28,7 +28,7 @@ public class Program_2 {
 		int n = ip.nextInt();
 		for (int j = 0; j < n; j++) {
 			st[j] = new Program_2();
-			System.out.format("Enter the Usn, Name, Branch, Phone Number of student %d :\n", j + 1);
+			System.out.println("Enter the Usn, Name, Branch, Phone Number of student " + (j + 1) + " :");
 			ip.nextLine();
 			st[j].usn = ip.nextLine();
 			st[j].name = ip.nextLine();
@@ -38,7 +38,7 @@ public class Program_2 {
 		ip.close();
 		System.out.println("\t************************");
 		for (int j = 0; j < n; j++) {
-			System.out.format("\t Student %d details are\n", j + 1);
+			System.out.println("\t Student " + (j + 1) + " details are: ");
 			st[j].displayStudent();
 		}
 

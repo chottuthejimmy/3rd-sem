@@ -12,7 +12,7 @@ class Staff {
     float salary;
     Scanner id = new Scanner(System.in);
 
-    public void accept(Scanner id) {
+    public void accept() {
         System.out.print("Enter Staff Id: ");
         staffId = id.next();
         System.out.print("Enter Name: ");
@@ -36,8 +36,8 @@ class Teaching extends Staff {
     String domain;
     int n;
 
-    public void accept(Scanner id) {
-        super.accept(id);
+    public void accept() {
+        super.accept();
         System.out.print("Enter Domain: ");
         domain = id.next();
         domain += id.nextLine();
@@ -57,8 +57,8 @@ class Teaching extends Staff {
 class Technical extends Staff {
     String skill;
 
-    public void accept(Scanner id) {
-        super.accept(id);
+    public void accept() {
+        super.accept();
         System.out.print("Enter technical Skills: ");
         skill = id.nextLine();
         skill += id.nextLine();
@@ -75,8 +75,8 @@ class Technical extends Staff {
 class Contract extends Staff {
     int period;
 
-    public void accept(Scanner id) {
-        super.accept(id);
+    public void accept() {
+        super.accept();
         System.out.print("Enter Period: ");
         period = id.nextInt();
         System.out.println("\n");
@@ -90,16 +90,15 @@ class Contract extends Staff {
 
 public class Program_4 {
     public static void main(String[] args) {
-        Scanner id = new Scanner(System.in);
         Teaching teaching = new Teaching();
         System.out.println("Enter the details of Teaching Staff");
-        teaching.accept(id);
+        teaching.accept();
         Technical technical = new Technical();
         System.out.println("Enter the details of Technical Staff");
-        technical.accept(id);
+        technical.accept();
         Contract contract = new Contract();
         System.out.println("Enter the details of Contract Staff");
-        contract.accept(id);
+        contract.accept();
         System.out.println("The details of Teaching Staff");
         teaching.display();
         System.out.println("The details of Technical Staff");

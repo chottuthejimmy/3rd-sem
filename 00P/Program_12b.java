@@ -13,7 +13,6 @@ class Calculator implements ActionListener {
     public void Display() {
         frame.setTitle("IUK Calculator"); // Title of the JFrame
         frame.setSize(225, 300); // Calculator Size
-        frame.setLayout(null); // Setting Layout
         frame.setVisible(true); // Setting window's visibility
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// Setting default close operations
         t.setBounds(30, 10, 165, 35);

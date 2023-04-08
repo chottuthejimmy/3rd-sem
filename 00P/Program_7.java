@@ -1,6 +1,5 @@
-//Write a java program to generate the resume. Create 2 Java classes: teacher (data: personal information,
-// qualification, experience, achievements) and student (data: personal information, result, discipline) which
-// implements the Java interface resume with the method biodata().
+//Write a java program to generate the resume. Create 2 Java classes: teacher (data: personal information, qualification, experience, achievements) and student (data: personal information, result, discipline) which implements the Java interface resume with the method biodata().
+
 import java.util.Scanner;
 
 interface resume {
@@ -57,6 +56,7 @@ public class Program_7 {
         student s = new student();
         System.out.println("Enter the name of the teacher:");
         t.name = sc.next();
+        t.name += sc.nextLine();
         System.out.println("Enter the email id of the teacher:");
         t.emailid = sc.next();
         System.out.println("Enter the phone no of the teacher:");

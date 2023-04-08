@@ -20,7 +20,7 @@ class Program_11
             System.out.println("File exists");
             System.out.println(f1.canWrite() ? "File is writeable" : "File is not writeable");
             System.out.println(f1.canRead() ? "File is readable" : "File is not readable");
-            int index = fname.lastIndexOf('.');
+            int index = fname.indexOf('.');
             String type = fname.substring(index + 1);//substring function extracts the remaining part of the string
             System.out.println("File type is " + type);
             System.out.println("File size: " + f1.length() + " Bytes");
