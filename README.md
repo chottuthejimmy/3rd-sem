@@ -5,4 +5,4 @@ IF YOU HAVE A BETTER WAY OR A DIFFERENT WAY TO SOLVE THE QUESTIONS
 IT'S ALWAYS BETTER TO COMMIT YOUR FILE VIA PULL REQUESTS AND LABELING 'ENHANCEMENT' IN THE MAIN BRANCH.
 THERE'S ALWAYS A ROOM FOR DISCUSSIONS UNDER THE DISCUSSION TAB .
 
-“ Code is like humor. When you have to explain it, it’s bad.” – Cory House
+“ Code is like humour. When you have to explain it, it’s bad.” – Cory House
